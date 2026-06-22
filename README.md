@@ -113,7 +113,7 @@ You will use this .uf2 file in section C.2 to program the Adafruit Feather RP204
 
 ***Done! The Feather should be now programmed and functional.***
 
-# How it works
+# Experimental results
 
 - Download the project's presentation slides [here](docs/files/EECS_753_Final_Project_Presentation.pdf).
 - Download the project's final report [here](docs/files/EECS753_Final_Project_Report_Leo_Cabezas.pdf).
