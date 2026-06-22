@@ -1,0 +1,61 @@
+#pragma once    // To prevent duplicate library imports.
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+// =======================================================================================
+// EARENDIL_DISPLAY DEPENDENCIES
+// =======================================================================================
+// ///////////////////////////////////////////////////////////////////////////////////////
+
+// --- DEPENDENCIES // FreeRTOS-Kernel ---
+#include <FreeRTOS.h>           // For pdMS_TO_TICKS(), etc. Needed for task.h, semphr.h, etc.
+#include <task.h>               // For vTaskDelay(), etc.
+#include <semphr.h>             // For SemaphoreHandle_t, xSemaphoreTake(), xSemaphoreGive(), etc.
+
+// --- DEPENDENCIES // pico-sdk ---
+#include <pico/stdlib.h>        // For gpio_init(), gpio_set_dir(), gpio_put(), I/O with printf(), etc.
+#include <pico/multicore.h>     // Enable as needed. Not needed at the moment
+
+// --- DEPENDENCIES // THIRD-PARTY LIBRARIES ---
+#include <Adafruit_BMP3XX.h>    // Adafruit_BMP3XX library.
+
+// --- DEPENDENCIES // EARENDIL LIBRARIES ---
+#include <Earendil_TaskHandles.h>
+#include <Earendil_SharedData.h>
+#include <Earendil_Mutexes.h>
+
+// --- OTHER DEPENDENCIES ---
+#include <math.h>
+
+// --- GLOBALS // ALTIMETER ---
+#define SEALEVELPRESSURE_HPA (1008.0)//Lawrence, KS local sea-level pressure: 20260429
+#define LOCAL_ALTITUDE (291.7)//m
+#define LAPSE_RATE (0.0065)//K/m
+#define HYPSOMETRIC_CONSTANT (0.190284)// GAS_CONSTANT * LAPSE_RATE / GRAVITY = (287.05 J/kg*K) * (0.0065 K/m) / (9.80665 m/s²)
+
+#define PERIOD_VALTIMETER_MS    120
+
+// #define DELAY_VALTIMETER (5000)//5000 for Handheld
+
+namespace Earendil_Altimeter {
+    // --------------------------------- TASKS ---------------------------------
+    extern Earendil::Earendil_TaskHandles_t*    Earendil_Handles;
+    extern Earendil::Earendil_SharedData_t*     Earendil_Data;
+    extern Earendil::Earendil_Mutexes_t*        Earendil_Mutexes;
+    
+    void linkSharedStructs(
+        Earendil::Earendil_TaskHandles_t*   global_Earendil_Handles,
+        Earendil::Earendil_SharedData_t*    global_Earendil_Data,
+        Earendil::Earendil_Mutexes_t*       global_Earendil_Mutexes
+    );
+
+    void createTasks(void);
+
+    void createTask_vAltimeter(void);
+    void vAltimeter(void* pvParameters);
+
+    // --------------------------------- UTILS ---------------------------------
+    extern Adafruit_BMP3XX altimeter;
+    void setup();
+    void altimeterRead();
+    void altRead_node();
+}

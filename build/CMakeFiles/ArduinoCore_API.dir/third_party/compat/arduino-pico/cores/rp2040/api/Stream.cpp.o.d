@@ -1,0 +1,45 @@
+CMakeFiles/ArduinoCore_API.dir/third_party/compat/arduino-pico/cores/rp2040/api/Stream.cpp.o: \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/Stream.cpp \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/Common.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdbool.h \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/Stream.h \
+ /usr/arm-none-eabi/include/inttypes.h \
+ /usr/arm-none-eabi/include/newlib.h \
+ /usr/arm-none-eabi/include/sys/config.h \
+ /usr/arm-none-eabi/include/machine/ieeefp.h \
+ /usr/arm-none-eabi/include/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h \
+ /usr/arm-none-eabi/include/sys/_locale.h \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/Print.h \
+ /usr/arm-none-eabi/include/stdio.h \
+ /usr/arm-none-eabi/include/sys/cdefs.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h \
+ /usr/arm-none-eabi/include/sys/reent.h \
+ /usr/arm-none-eabi/include/_ansi.h \
+ /usr/arm-none-eabi/include/sys/_types.h \
+ /usr/arm-none-eabi/include/machine/_types.h \
+ /usr/arm-none-eabi/include/sys/lock.h \
+ /usr/arm-none-eabi/include/sys/stdio.h \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/String.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/stdlib.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/cstdlib \
+ /usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/pstl/pstl_config.h \
+ /usr/arm-none-eabi/include/stdlib.h \
+ /usr/arm-none-eabi/include/machine/stdlib.h \
+ /usr/arm-none-eabi/include/alloca.h \
+ /usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h \
+ /usr/arm-none-eabi/include/string.h /usr/arm-none-eabi/include/strings.h \
+ /usr/arm-none-eabi/include/sys/string.h \
+ /usr/arm-none-eabi/include/ctype.h \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/deprecated-avr-comp/avr/pgmspace.h \
+ /home/hermeric/Desktop/freertos_experiment_framework/third_party/compat/arduino-pico/cores/rp2040/api/Printable.h
