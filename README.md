@@ -11,8 +11,8 @@ Text summary here.
 ## A. Required Hardware
 
 <figure align="center">
-  <img src="docs/images/handheld_hardware_diagram.png" alt="handheld_hardware_diagram" width="500" />
-  <figcaption><em>Figure 5: Handheld hardware diagram.</em></figcaption>
+  <img src="docs/images/experimental_setup.png" alt="experimental_setup" width="500" />
+  <figcaption><em>Figure 1: Hardware diagram for the scheduling experiments.</em></figcaption>
 </figure>
 <br><br>
 
@@ -104,3 +104,6 @@ You will use this .uf2 file in section C.2 to program the Adafruit Feather RP204
 ***Done! The Feather should be now programmed and functional.***
 
 # How it works
+
+- Download the project's presentation slides [here](docs/files/EECS_753_Final_Project_Presentation.pdf).
+- Download the project's final report [here](docs/files/EECS753_Final_Project_Report_Leo_Cabezas.pdf).
