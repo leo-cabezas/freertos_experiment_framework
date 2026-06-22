@@ -12,7 +12,7 @@ Text summary here.
 
 <figure align="center">
   <img src="docs/images/experimental_setup.png" alt="experimental_setup" width="500" />
-  <figcaption><em>Figure 1: Hardware diagram for the scheduling experiments.</em></figcaption>
+  <figcaption><em>Figure 1: Hardware diagram for the experimental setup.</em></figcaption>
 </figure>
 <br><br>
 
@@ -23,7 +23,7 @@ Text summary here.
 | Precision Altimeter | [Adafruit BMP390 - Precision Barometric Pressure and Altimeter - STEMMA QT / Qwiic](https://www.adafruit.com/product/4816) | I²C | 1 x $10.95 |
 | Accelerometer + Gyroscope | [Adafruit LSM6DSOX 6 DoF Accelerometer and Gyroscope - STEMMA QT / Qwiic](https://www.adafruit.com/product/4438) | I²C | 1 x $11.95 |
 
-**Total Handheld cost:** $58.80 (as of 2026-06-21)
+**Total cost:** $58.80 (as of 2026-06-21)
 
 # B. Software dependencies
 
