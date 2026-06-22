@@ -3,8 +3,18 @@
 - **Institution:** University of Kansas
 - **Course:** EECS 753 (Embedded & Real-Time Systems)
 
-Text summary here.
+This project explores a highly popular open-source RTOS for embedded platforms (FreeRTOS), by designing and deploying a software framework built around it on a resource-constrained microcontroller unit (MCU), the Adafruit Feather RP2040 with RFM95. Moreover, a RT taskset is designed around three external sensor modules sharing a data bus, and the effects of shared resource contention and an attacker task are analyzed.
 
+*Note: This is a fork of* [earendil_SAR_system](https://github.com/leo-cabezas/earendil_SAR_system)*, and thus borrows part of its codebase to facilitate development.*
+
+# Objectives
+- Schedule a set of tasks in a freely available RTOS for a given target embedded platform.
+- Design and implement a task scheduling experiment in an RTOS, including mechanisms to log
+and process relevant task data (e.g. execution time, deadline misses).
+- Measure the real-world effects of shared resource contention on a set of RT tasks, and how they
+are partially mitigated by applying well-known priority inheritance mechanism (e.g. PIP).
+- Design and implement a simple "attacker task" which targets a shared resource, and measure the
+effects of the attack on other tasks (e.g. increased execution times, induced deadline misses
 
 # Deployment instructions
 
